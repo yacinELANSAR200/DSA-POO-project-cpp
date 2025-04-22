@@ -1,0 +1,43 @@
+#include <iostream>
+#include "clsMyString.h"
+
+int main()
+{
+	cout << "\n\n\t\t\t\t\t\t Undo/Redo Project\n\n";
+
+	clsMyString S1;
+
+	cout << "\nS1 = " << S1.value << "\n";
+	S1.value = "Mohammed";
+	cout << "S1= " << S1. value << "\n";
+	S1.value = "Mohammed2";
+	cout << "S1 = " << S1.value << "\n";
+	S1.value = "Mohammed3";
+	cout << "S1 = " << S1.value << "\n";
+
+	cout << "\n\n Undo";
+	cout << "\n_________\n";
+
+	S1.Undo();
+	cout << "\nS1 after undo = " << S1.value << "\n";
+	
+	S1.Undo();
+	cout << "\nS1 after undo = " << S1.value << "\n";
+	
+	S1.Undo();
+	cout << "\nS1 after undo = " << S1.value << "\n";
+
+	cout << "\n\n Redo";
+	cout << "\n_________\n";
+
+	S1.Redo();
+	cout << "\nS1 after redo = " << S1.value << "\n";
+
+	S1.Redo();
+	cout << "\nS1 after redo = " << S1.value << "\n";
+
+	S1.Redo();
+	cout << "\nS1 after redo = " << S1.value << "\n";
+
+	return 0;
+}

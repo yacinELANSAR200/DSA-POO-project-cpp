@@ -1,0 +1,84 @@
+
+#include <iostream>
+#include "clsDblLinkedList.h"
+using namespace std;
+int main()
+{
+    clsDblLinkedList <int> MydbLinkedList;
+
+  /*  if (MydbLinkedList.IsEmpty())
+    {
+        cout << "\nEmpty\n";
+    }
+    else {
+        cout << "\nis Not Empty\n";
+    }*/
+
+    MydbLinkedList.InsertAtBeginning(5);
+    MydbLinkedList.InsertAtBeginning(4);
+    MydbLinkedList.InsertAtBeginning(3);
+    MydbLinkedList.InsertAtBeginning(2);
+    MydbLinkedList.InsertAtBeginning(1);
+
+   /* if (MydbLinkedList.IsEmpty())
+    {
+        cout << "\nEmpty\n";
+    }
+    else {
+        cout << "\nis Not Empty\n";
+    }*/
+
+    cout << "\nLinked List Content\n";
+    MydbLinkedList.PrintList();
+
+    /*clsDblLinkedList<int>::Node* N1 = MydbLinkedList.Find(2);
+    if (N1!=NULL)
+        cout << "\nNode with value 2 is Found :-)\n";
+    else
+        cout << "\nNode with value 2 is not Found :-(\n";
+    
+    MydbLinkedList.InsertAfter(N1, 500);
+    cout << "\nAfter Inserting 500 After 2\n";
+    MydbLinkedList.PrintList();
+    
+    MydbLinkedList.InsertAtEnd(700);
+    cout << "\nAfter Inserting 700 At end\n";
+    MydbLinkedList.PrintList();
+
+    clsDblLinkedList<int>::Node* N2 = MydbLinkedList.Find(4);
+    MydbLinkedList.DeleteNode(N2);
+    cout << "\nAfter Deleting 4\n";
+    MydbLinkedList.PrintList();
+    
+    cout << "\nAfter Deleting First Node\n";
+    MydbLinkedList.DeleteFirstNode();
+    MydbLinkedList.PrintList();*/
+
+    //cout << "\nThe number of items in linked list: " << MydbLinkedList.Size() <<endl;
+
+    /*cout << "\nExecuting clear()\n";
+
+    MydbLinkedList.Clear();
+    cout << "\nThe number of items in linked list: " << MydbLinkedList.Size() <<endl;
+    MydbLinkedList.PrintList();*/
+
+    /*MydbLinkedList.Reverse();
+
+    cout << "Linked list content after reversing: \n";
+    MydbLinkedList.PrintList();*/
+
+   /* clsDblLinkedList <int> ::Node* N;
+    N = MydbLinkedList.GetNode(2);
+    cout << "\nNode value is : " << N->value<<endl;*/
+
+    //cout << "\nItem(2) value is : " << MydbLinkedList.GetItem(2);
+
+   /* MydbLinkedList.UpdateItem(2, 500);
+    cout << "\nAfter Updating item(2)\n";
+    MydbLinkedList.PrintList();*/
+
+    cout << "\nAfter Insert\n";
+    MydbLinkedList.InsertAfter(6, 500);
+    MydbLinkedList.PrintList();
+}
+
